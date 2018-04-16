@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SampleProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UfK-Ld-qqt">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bn2-2T-754"/>
+                                </constraints>
+                                <state key="normal" title="System Button">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wrx-Ks-zBi" customClass="SSRadioButton" customModule="SampleProject" customModuleProvider="target">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3mz-99-V6B"/>
+                                </constraints>
+                                <state key="normal" title="Button 1">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="circleColor">
+                                        <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="circleRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="zTu-Q8-1SF" customClass="SSRadioButton" customModule="SampleProject" customModuleProvider="target">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="FXe-R0-MQq"/>
+                                    <constraint firstAttribute="height" constant="90" id="GUb-YE-Okt"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="MHx-YT-obB"/>
+                                    <constraint firstAttribute="height" id="n7g-6c-v2t"/>
+                                </constraints>
+                                <state key="normal" title="Button looooooooong  looooooooong looooooooong looooooooong looooooooong text"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="circleColor">
+                                        <color key="value" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="circleRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="GUb-YE-Okt"/>
+                                        <exclude reference="n7g-6c-v2t"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UfK-Ld-qqt" firstAttribute="leading" secondItem="zTu-Q8-1SF" secondAttribute="leading" id="6Dx-Qp-v5V"/>
+                            <constraint firstItem="Wrx-Ks-zBi" firstAttribute="trailing" secondItem="zTu-Q8-1SF" secondAttribute="trailing" id="9eB-cJ-84j"/>
+                            <constraint firstItem="UfK-Ld-qqt" firstAttribute="trailing" secondItem="zTu-Q8-1SF" secondAttribute="trailing" id="M1U-iZ-xd0"/>
+                            <constraint firstItem="UfK-Ld-qqt" firstAttribute="width" secondItem="zTu-Q8-1SF" secondAttribute="width" id="Ni7-Zk-6im"/>
+                            <constraint firstItem="UfK-Ld-qqt" firstAttribute="centerX" secondItem="zTu-Q8-1SF" secondAttribute="centerX" id="Nxz-yJ-ciR"/>
+                            <constraint firstItem="UfK-Ld-qqt" firstAttribute="top" secondItem="zTu-Q8-1SF" secondAttribute="bottom" constant="8" id="PhO-fI-3Sb"/>
+                            <constraint firstItem="Wrx-Ks-zBi" firstAttribute="leading" secondItem="zTu-Q8-1SF" secondAttribute="leading" id="cFm-Ae-HSn"/>
+                            <constraint firstItem="Wrx-Ks-zBi" firstAttribute="width" secondItem="zTu-Q8-1SF" secondAttribute="width" id="hTh-h6-8sd"/>
+                            <constraint firstItem="zTu-Q8-1SF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ntH-z4-Vg3"/>
+                            <constraint firstItem="zTu-Q8-1SF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="osH-m6-sbE"/>
+                            <constraint firstItem="Wrx-Ks-zBi" firstAttribute="centerX" secondItem="zTu-Q8-1SF" secondAttribute="centerX" id="ryu-TX-qZJ"/>
+                            <constraint firstItem="zTu-Q8-1SF" firstAttribute="top" secondItem="Wrx-Ks-zBi" secondAttribute="bottom" constant="8" id="ww4-zM-w8Y"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button1" destination="Wrx-Ks-zBi" id="yeU-vj-IWn"/>
+                        <outlet property="button2" destination="zTu-Q8-1SF" id="2Gj-Fo-pSP"/>
+                        <outlet property="button3" destination="UfK-Ld-qqt" id="1JZ-kE-0l7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="410" y="118"/>
+        </scene>
+    </scenes>
+</document>
